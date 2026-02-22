@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formations - EFREI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="logo-container">
+<img src="Photo/logo-efrei.jpg" alt="Logo EFREI">
+</div>
+<nav>
+<ul>
+<li><a href="Acceuil.html">Accueil</a></li>
+<li><a href="Cours_Formations.html" class="active">Formations</a></li>
+<li><a href="Equipe.html">Équipe</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="container">
+<h2>Nos Cursus Informatiques</h2>
+<div class="filter-buttons">
+<button onclick="filterTable('all')" class="ui-btn filter-btn active">Tout voir</button>
+<button onclick="filterTable('prepa')" class="ui-btn filter-btn">Cycle Prépa</button>
+<button onclick="filterTable('ingé')" class="ui-btn filter-btn">Cycle Ingénieur</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Niveau</th>
+            <th>Spécialité</th>
+            <th>Compétences Clés</th>
+            <th>Modalité</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        <tr class="formation-row prepa">
+            <td>Cycle Prépa</td>
+            <td style="font-weight: bold; color: var(--text-light);">Tronc Commun Numérique</td>
+            <td>Algorithmique, Mathématiques, Web</td>
+            <td><span class="badge">Initial</span></td>
+        </tr>
+        <tr class="formation-row prepa">
+            <td>Cycle Prépa</td>
+            <td style="font-weight: bold; color: var(--text-light);">International Track</td>
+            <td>English, Physics, Computer Science</td>
+            <td><span class="badge">Initial</span></td>
+        </tr>
+        <tr class="formation-row ingé">
+            <td>Cycle Ingénieur</td>
+            <td style="font-weight: bold; color: var(--text-light);">Cybersécurité</td>
+            <td>Pentesting, Cryptographie, Réseaux</td>
+            <td><span class="badge">Initial / Apprentissage</span></td>
+        </tr>
+        <tr class="formation-row ingé">
+            <td>Cycle Ingénieur</td>
+            <td style="font-weight: bold; color: var(--text-light);">Data & IA</td>
+            <td>Machine Learning, Big Data, Python</td>
+            <td><span class="badge">Initial / Apprentissage</span></td>
+        </tr>
+        <tr class="formation-row ingé">
+            <td>Cycle Ingénieur</td>
+            <td style="font-weight: bold; color: var(--text-light);">Software Engineering</td>
+            <td>Architecture logicielle, DevOps, Fullstack</td>
+            <td><span class="badge">Initial / Apprentissage</span></td>
+        </tr>
+        <tr class="formation-row ingé">
+            <td>Cycle Ingénieur</td>
+            <td style="font-weight: bold; color: var(--text-light);">Cloud & Réseaux</td>
+            <td>Virtualisation, Azure/AWS, Admin Sys</td>
+            <td><span class="badge">Initial / Apprentissage</span></td>
+        </tr>
+        <tr class="formation-row ingé">
+            <td>Cycle Ingénieur</td>
+            <td style="font-weight: bold; color: var(--text-light);">Bio-Informatique</td>
+            <td>Analyse génomique, Santé connectée</td>
+            <td><span class="badge">Initial</span></td>
+        </tr>
+        <tr class="formation-row ingé">
+            <td>Cycle Ingénieur</td>
+            <td style="font-weight: bold; color: var(--text-light);">Systèmes Embarqués</td>
+            <td>C/C++, IoT, Robotique</td>
+            <td><span class="badge">Initial / Apprentissage</span></td>
+        </tr>
+    </tbody>
+</table>
+
+
+</main>
+
+<footer>
+<p>&copy; 2025-2026 - Département Informatique EFREI</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
